@@ -30,3 +30,6 @@ observableCreated$.pipe(
     }),
     toArray()
 ).subscribe(function (arr) { console.log(arr); });
+
+// map 연산자로 값을 감쌀 때마다 새로운 옵저버블 객체만 생성한다.
+// 새로 생성한 옵저버블은 구독할 때까지 실행되지 않으므로 배열이 생성될 때처럼 실제 연산자가 동작하지 않는다.
